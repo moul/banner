@@ -1,6 +1,3 @@
-GOPKG ?=	moul.io/golang-repo-template
-DOCKER_IMAGE ?=	moul/golang-repo-template
-GOBINS ?=	.
-NPM_PACKAGES ?=	.
+GOPKG ?=	moul.io/banner
 
 include rules.mk
