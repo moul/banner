@@ -1,6 +1,6 @@
 # banner
 
-:smile: banner
+:smile: ultra lightweight ascii-art generator
 
 ![CI](https://github.com/moul/banner/workflows/CI/badge.svg)
 [![go.dev reference](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white)](https://pkg.go.dev/moul.io/banner)
@@ -9,10 +9,8 @@
 [![Go Report Card](https://goreportcard.com/badge/moul.io/banner)](https://goreportcard.com/report/moul.io/banner)
 [![CodeFactor](https://www.codefactor.io/repository/github/moul/banner/badge)](https://www.codefactor.io/repository/github/moul/banner)
 [![codecov](https://codecov.io/gh/moul/banner/branch/master/graph/badge.svg)](https://codecov.io/gh/moul/banner)
-[![Docker Metrics](https://images.microbadger.com/badges/image/moul/banner.svg)](https://microbadger.com/images/moul/banner)
 [![GolangCI](https://golangci.com/badges/github.com/moul/banner.svg)](https://golangci.com/r/github.com/moul/banner)
 [![Made by Manfred Touron](https://img.shields.io/badge/made%20by-Manfred%20Touron-blue.svg?style=flat)](https://manfred.life/)
-
 
 ## Usage
 
