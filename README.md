@@ -12,9 +12,30 @@
 [![GolangCI](https://golangci.com/badges/github.com/moul/banner.svg)](https://golangci.com/r/github.com/moul/banner)
 [![Made by Manfred Touron](https://img.shields.io/badge/made%20by-Manfred%20Touron-blue.svg?style=flat)](https://manfred.life/)
 
+Pure-go library to generate ASCII-art banners from text.
+
+* doesn't need any external dependencies
+* very lightweight footprint at the end in the generated binary
+  * ~38kb with default build options
+  * ~12kb with upx + binary strip
+* only one font available ([small.flf](http://www.figlet.org/fontdb_example.cgi?font=small.flf))
+  * incomplete alphabet (a-zA-Z.-_?)
+
 ## Usage
 
-TODO
+```go
+import "moul.io/banner"
+
+fmt.Println(banner.Inline("hey world."))
+```
+
+```
+ _                                    _     _
+| |_   ___  _  _   __ __ __ ___  _ _ | | __| |
+| ' \ / -_)| || |  \ V  V // _ \| '_|| |/ _` | _
+|_||_|\___| \_, |   \_/\_/ \___/|_|  |_|\__,_|(_)
+            |__/
+```
 
 ## Install
 
