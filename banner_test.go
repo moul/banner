@@ -21,6 +21,56 @@ func ExampleInline() {
 	// end of banner
 }
 
+func ExampleInline_lowercase() {
+	fmt.Println("start of banner")
+	fmt.Println(banner.Inline("abcdefghij"))
+	fmt.Println(banner.Inline("klmnopqrst"))
+	fmt.Println(banner.Inline("uvwxyz"))
+	fmt.Println("end of banner")
+	// Output:
+	// start of banner
+	//        _            _        __        _     _    _
+	//  __ _ | |__  __  __| | ___  / _| __ _ | |_  (_)  (_)
+	// / _` || '_ \/ _|/ _` |/ -_)|  _|/ _` || ' \ | |  | |
+	// \__,_||_.__/\__|\__,_|\___||_|  \__, ||_||_||_| _/ |
+	//                                 |___/          |__/
+	//  _    _                                         _
+	// | |__| | _ __   _ _   ___  _ __  __ _  _ _  ___| |_
+	// | / /| || '  \ | ' \ / _ \| '_ \/ _` || '_|(_-<|  _|
+	// |_\_\|_||_|_|_||_||_|\___/| .__/\__, ||_|  /__/ \__|
+	//                           |_|      |_|
+	//  _  _ __ ____ __ ____ __ _  _  ___
+	// | || |\ V /\ V  V /\ \ /| || ||_ /
+	//  \_,_| \_/  \_/\_/ /_\_\ \_, |/__|
+	//                          |__/
+	// end of banner
+}
+
+func ExampleInline_uppercase() {
+	fmt.Println("start of banner")
+	fmt.Println(banner.Inline("ABCDEFGHIJ"))
+	fmt.Println(banner.Inline("KLMNOPQRST"))
+	fmt.Println(banner.Inline("UVWXYZ"))
+	fmt.Println("end of banner")
+	// Output:
+	// start of banner
+	//        _            _        __        _     _    _
+	//  __ _ | |__  __  __| | ___  / _| __ _ | |_  (_)  (_)
+	// / _` || '_ \/ _|/ _` |/ -_)|  _|/ _` || ' \ | |  | |
+	// \__,_||_.__/\__|\__,_|\___||_|  \__, ||_||_||_| _/ |
+	//                                 |___/          |__/
+	//  _    _                                         _
+	// | |__| | _ __   _ _   ___  _ __  __ _  _ _  ___| |_
+	// | / /| || '  \ | ' \ / _ \| '_ \/ _` || '_|(_-<|  _|
+	// |_\_\|_||_|_|_||_||_|\___/| .__/\__, ||_|  /__/ \__|
+	//                           |_|      |_|
+	//  _  _ __ ____ __ ____ __ _  _  ___
+	// | || |\ V /\ V  V /\ \ /| || ||_ /
+	//  \_,_| \_/  \_/\_/ /_\_\ \_, |/__|
+	//                          |__/
+	// end of banner
+}
+
 func TestInline(t *testing.T) {
 	tests := []struct {
 		input    string
